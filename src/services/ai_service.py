@@ -23,7 +23,7 @@ if os.getenv("ANTHROPIC_API_KEY"):
     
     # Временно захардкодим ключ для тестирования, так как он работает в test_anthropic.py
     # Должно быть удалено после тестирования!
-    hardcoded_key = "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"
+    hardcoded_key = ""
     print(f"[DEBUG] Using hardcoded key instead: {hardcoded_key[:10]}...{hardcoded_key[-4:]}")
     
     anthropic_client = Anthropic(api_key=hardcoded_key)
